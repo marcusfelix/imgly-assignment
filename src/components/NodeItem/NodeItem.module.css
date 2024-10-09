@@ -1,0 +1,51 @@
+.item {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item .label {
+  padding: 0px 8px;
+  height: 38px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+
+  & svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  & * {
+    opacity: 0.5;
+  }
+}
+
+.item.selected {
+  background-color: var(--accent-color-faded);
+  color: var(--on-accent-color-faded);
+}
+
+/* Using > here to ensure that this rule does not apply to children's labels */
+.item.selected > .label {
+  background-color: var(--accent-color);
+  color: var(--on-accent-color);
+
+  & * {
+    opacity: 1;
+  }
+}
+
+.item .label:hover {
+  & * {
+    opacity: 1;
+  }
+}
+
+.item .children {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
