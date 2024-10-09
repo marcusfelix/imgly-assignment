@@ -1,0 +1,16 @@
+.sidebar {
+  flex: 0 0 300px;
+  height: calc(100% - 52px);
+  border-right: 1px solid var(--border-color);
+  overflow: auto;
+}
+.sidebar .scroll {
+  padding: 16px;
+}
+
+.sidebar .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
