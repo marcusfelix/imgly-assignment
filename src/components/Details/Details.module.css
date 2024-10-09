@@ -1,0 +1,19 @@
+.details {
+  flex: 1;
+  padding: 16px;
+}
+
+.details .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 52px);
+}
+
+.details .meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
