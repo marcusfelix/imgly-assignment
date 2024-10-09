@@ -1,0 +1,11 @@
+.spinner {
+  animation: rotate 1s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
