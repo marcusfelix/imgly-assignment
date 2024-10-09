@@ -25,7 +25,10 @@ export default function NodeItem({ node }: Props) {
 
     // Prevent dropping on itself
     if(drop.uniqueId === node.uniqueId) return;
-    
+
+    // Prevent dropping on a node without children
+    if(node.children === undefined) return
+
     moveNodeFromTo(drop, node);
   }
 
