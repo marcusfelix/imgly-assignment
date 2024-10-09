@@ -26,6 +26,10 @@ export const TreeProvider = ({ children }: { children: ReactNode }) => {
     fetchRemoteTreeData();
   }, [])
 
+  useEffect(() => {
+    console.info("Tree updated", tree);
+  }, [tree])
+
   /**
    * Fetch the remote tree data and set it to the state
    */
