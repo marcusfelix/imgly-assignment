@@ -5,7 +5,6 @@
  * @returns Promise with fetched data
  * @throws Error if fetch fails
  */
-
 export default async function fetchData<T>(url: string, options?: RequestInit): Promise<T> {
   try {
     const response = await fetch(url, options);

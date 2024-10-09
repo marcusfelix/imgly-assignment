@@ -1,12 +1,11 @@
+import { Node } from "../types/node";
+
 /**
  * Delete a node by its uniqueId
  * @param node 
  * @param id 
  * @returns A boolean indicating if the node was deleted
  */
-
-import { Node } from "../types/node";
-
 export const deleteNodeById = (node: Node[], id: string) => {
   for (let i = 0; i < node.length; i++) {
     if (node[i].uniqueId === id) {
